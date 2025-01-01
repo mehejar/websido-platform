@@ -13,6 +13,7 @@ app.use(cors())
 
 // Application routes
 app.use('/api/users', userRoutes)
+app.use('/api/order', userRoutes)
 
 
 
@@ -21,7 +22,6 @@ export const getAController = (req: Request, res: Response) => {
 }
 
 app.get('/', getAController)
-
 app.use(globalErrorHandler);
 
 
